@@ -12,13 +12,15 @@ body{
     background-color: #000000;
 }
 
+
+
 header{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 60px;
 }
-.cabeçalho{
+.cabecalho{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -62,7 +64,6 @@ main{
     padding: 10px 12px;
     overflow: auto;
 }
-
 .chat-recebido{
     display: flex;
     flex-direction: column;
@@ -87,7 +88,6 @@ main{
     font-weight: normal;
     word-break: break-word;
 }
-
 .chat-enviado{
     display: flex;
     flex-direction: column;
