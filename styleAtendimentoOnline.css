@@ -1,26 +1,26 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body{
+
+body {
     height: 100%;
-    font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
-    font-size: 15px; 
+    font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu, Cantarell, Fira Sans, sans-serif;
+    font-size: 15px;
     color: #000000;
     justify-content: center;
     background-color: #000000;
 }
 
-
-
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 60px;
 }
-.cabecalho{
+
+.cabeçalho {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -30,19 +30,22 @@ header{
     box-shadow: 0px 2px 2px #d6d6d6;
     z-index: 1;
 }
-.nome-foto{
+
+.nome-foto {
     display: flex;
     align-items: center;
     width: 40px;
     padding: 10px 12px;
 }
-header img{
+
+header img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
 }
-.titulo-chat{
+
+.titulo-chat {
     width: 100%;
     padding-left: 27px;
     word-break: break-all;
@@ -50,12 +53,13 @@ header img{
 
 
 
-main{
+main {
     display: flex;
     justify-content: center;
-    height: calc(100vh - 113px);    
+    height: calc(100vh - 113px);
 }
-.corpo{
+
+.corpo {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -64,22 +68,30 @@ main{
     padding: 10px 12px;
     overflow: auto;
 }
-.chat-recebido{
+
+.chat-recebido {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
     padding: 5px;
     max-width: 80%;
 }
-.chat-recebido h6{
+
+.chat-recebido li {
+    list-style-type: none;
+}
+
+.chat-recebido h6 {
     text-align: start;
     padding: 2px 4px;
 }
-.chat-recebido h5{
+
+.chat-recebido h5 {
     text-align: start;
-    padding: 5px 0px;   
+    padding: 5px 0px;
 }
-.chat-recebido h4{
+
+.chat-recebido h4 {
     border-radius: 0px 10px 10px 10px;
     background-color: white;
     word-break: break-all;
@@ -88,23 +100,36 @@ main{
     font-weight: normal;
     word-break: break-word;
 }
-.chat-enviado{
+
+.chat-enviado {
     display: flex;
     flex-direction: column;
     align-self: flex-end;
     padding: 5px;
     max-width: 80%;
 }
-.chat-enviado h6{
+
+.chat-enviado li {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-self: flex-end;
+    list-style-type: none;
+    padding: 1.5px 0px;
+}
+
+.chat-enviado h6 {
     text-align: end;
     padding: 2px 4px;
 }
-.chat-enviado h5{
+
+.chat-enviado h5 {
     text-align: end;
     padding: 5px 0px;
 }
-.chat-enviado h4{
-    border-radius: 10px 0px 10px 10px;
+
+.chat-enviado h4 {
+    border-radius: 10px 10px 10px 10px;
     padding: 6px 7px 8px 9px;
     word-break: break-all;
     background-color: #e3f7eb;
@@ -115,12 +140,13 @@ main{
 
 
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     height: 53px;
 }
-footer div{
+
+footer div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,7 +155,8 @@ footer div{
     box-shadow: 0px -2px 2px #d6d6d6;
     padding: 0px 8px;
 }
-footer input{
+
+footer input {
     border: none;
     width: calc(100% - 35px);
     height: 35px;
@@ -139,7 +166,8 @@ footer input{
     border-radius: 8px;
     outline: none;
 }
-footer button{
+
+footer button {
     width: 100px;
     height: 35px;
     border: none;
@@ -148,22 +176,23 @@ footer button{
     margin-left: 4px;
     color: white;
 }
-footer button:hover{
+
+footer button:hover {
     font-size: 13px;
     cursor: pointer;
     font-weight: bold;
 }
 
-
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 7px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     background: #eee4e3;
     border-radius: 50px;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 50px;
 }
