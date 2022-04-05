@@ -27,7 +27,7 @@ function carregaDados() {
 function enviarMensagem(usuario, mensagem, dataMensagem, horaMensagem) {
     let html = "";
     if (mensagem != "") {
-        const mensagemUL = document.createElement("ul");
+        const mensagemUL = document.getElementById("listagemMensagens")
         const mensagemLI = document.createElement("li");
         const usuarioH5 = document.createElement("h5");
         const mensagemH4 = document.createElement("h4");
@@ -41,8 +41,6 @@ function enviarMensagem(usuario, mensagem, dataMensagem, horaMensagem) {
         mensagemLI.appendChild(mensagemH4);
         mensagemLI.appendChild(horaMensagemH6);
         mensagemUL.appendChild(mensagemLI);
-        mensagemUL.className = "chat-enviado"
-        mensagemUL.id = "listagemMensagens"
 
         const listaMensagens = document.getElementById("divPrincipal");
         listaMensagens.appendChild(mensagemUL);
